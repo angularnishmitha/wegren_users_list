@@ -1,0 +1,13 @@
+<h2> &nbsp;&nbsp; User Form:</h2>
+<div class="container">
+  <div class="header">
+    &nbsp;&nbsp;  <input matInput #inputElementFirstName placeholder="Enter FirstName"><br><br>
+    &nbsp;&nbsp;  <input #inputElementLastName placeholder="Enter LastName"><br><br>
+    &nbsp;&nbsp; <input #inputElementEmail placeholder="Enter Email"><br><br>
+    &nbsp;&nbsp; <input #inputElementMobile placeholder="Enter Mobile"><br><br>
+    &nbsp;&nbsp;<input #inputElementPicture type="file" class="file-upload" (change)="onFileSelected($event)">
+    <br /> <br />
+    &nbsp;&nbsp; <button  color="primary" type="button" mat-raised-button (click)="onCreateUser(inputElementFirstName.value,inputElementLastName.value,inputElementEmail.value,inputElementMobile.value,inputElementPicture.value)">Create User</button>
+   </div>
+  <br><br>
+</div>
